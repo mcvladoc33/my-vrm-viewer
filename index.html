@@ -83,7 +83,6 @@
             });
         }
 
-        // --- ЗМІНЕНО ТУТ: Завантаження без папки static ---
         loadVRM('model.vrm');
 
         document.getElementById('fileInput').addEventListener('change', (e) => {
@@ -133,7 +132,7 @@
                     currentVrm.expressionManager.setValue('blink', blinkValue);
                 } else if (currentVrm.blendShapeProxy) {
                     currentVrm.blendShapeProxy.setValue('blink', blinkValue);
-                    currentVrm.blendShapeProxy.update(); // Оновлення блендшейпів
+                    currentVrm.blendShapeProxy.update();
                 }
             }
 
